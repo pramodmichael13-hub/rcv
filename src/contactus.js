@@ -1,0 +1,308 @@
+// --- WEB3FORMS EMAIL INTEGRATION ---
+const WEB3FORMS_KEY = '0421d39e-7c4d-49e4-b9a0-24c4e9da44c9';
+const RECIPIENT_EMAIL = 'info@redcarpetventures.in';
+
+async function sendLeadEmail(data, subject) {
+  const formData = new FormData();
+  formData.append('access_key', WEB3FORMS_KEY);
+  formData.append('subject', subject);
+  formData.append('to', RECIPIENT_EMAIL);
+  formData.append('from_name', 'Red Carpet Ventures Website');
+  for (const [key, value] of Object.entries(data)) {
+    formData.append(key, value);
+  }
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    });
+    const json = await res.json();
+    return json.success === true;
+  } catch (err) {
+    console.error('Email submission error:', err);
+    return false;
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  // --- MOBILE DROPDOWN TOGGLE HOOK ---
+  const dropdownToggle = document.querySelector('.dropdown-toggle');
+  if (dropdownToggle) {
+    dropdownToggle.addEventListener('click', (e) => {
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        dropdownToggle.parentElement.classList.toggle('active-mobile');
+      }
+    });
+  }
+
+
+
+  // --- HEADER SCROLL ACTION ---
+  const header = document.getElementById('main-header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+
+  // --- HAMBURGER MENU TOGGLE ---
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const navMenu = document.querySelector('header nav');
+  
+  const navOverlay = document.createElement('div');
+  navOverlay.className = 'nav-overlay';
+  document.body.appendChild(navOverlay);
+
+  const toggleMenu = () => {
+    if (!hamburgerBtn || !navMenu) return;
+    hamburgerBtn.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    navOverlay.classList.toggle('active');
+    document.body.classList.toggle('no-scroll');
+  };
+
+  if (hamburgerBtn) {
+    hamburgerBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      toggleMenu();
+    });
+  }
+
+  navOverlay.addEventListener('click', toggleMenu);
+
+  // --- FAQ ACCORDION ---
+  const faqTriggers = document.querySelectorAll('.faq-trigger');
+  faqTriggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const parent = trigger.parentNode;
+      const content = trigger.nextElementSibling;
+      const icon = trigger.querySelector('.faq-icon-box i');
+      
+      const isOpen = parent.classList.contains('active');
+
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+        item.querySelector('.faq-content').style.maxHeight = null;
+        item.querySelector('.faq-icon-box i').className = 'fa-solid fa-plus';
+      });
+
+      if (!isOpen) {
+        parent.classList.add('active');
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.className = 'fa-solid fa-minus';
+      }
+    });
+  });
+
+  // --- MULTI-STEP WIZARD MODAL ---
+  const modal = document.getElementById('lead-wizard-modal');
+  const btnCloseModal = document.getElementById('btn-close-modal');
+  const wizardPanels = document.querySelectorAll('.wizard-panel');
+  const indicators = document.querySelectorAll('.indicator-step');
+  const optionCards = document.querySelectorAll('.wizard-option-card');
+  const finalForm = document.getElementById('wizard-final-form');
+
+  let activeStep = 1;
+  let leadData = {
+    interest: 'properties',
+    locality: 'Devanahalli',
+    budget: 'tier-2',
+    name: '',
+    email: '',
+    phone: ''
+  };
+
+  const updateWizardStep = (step) => {
+    activeStep = step;
+
+    wizardPanels.forEach(panel => {
+      panel.classList.remove('active');
+      if (parseInt(panel.getAttribute('data-step')) === step) {
+        panel.classList.add('active');
+      }
+    });
+
+    indicators.forEach(ind => {
+      const indStep = parseInt(ind.getAttribute('data-step'));
+      ind.classList.remove('active', 'completed');
+
+      if (indStep === step) {
+        ind.classList.add('active');
+      } else if (indStep < step) {
+        ind.classList.add('completed');
+        ind.innerHTML = '<i class="fa-solid fa-check" style="font-size:0.7rem;"></i>';
+      } else {
+        ind.textContent = indStep;
+      }
+    });
+  };
+
+  const openModal = (interestType = '') => {
+    if (modal) {
+      modal.classList.add('active');
+      updateWizardStep(1);
+
+      if (interestType) {
+        leadData.interest = interestType;
+        
+        optionCards.forEach(c => {
+          if (c.parentNode.getAttribute('data-step') === '1') {
+            c.classList.remove('selected');
+            if (c.getAttribute('data-value') === interestType) {
+              c.classList.add('selected');
+            }
+          }
+        });
+
+        const modalTitle = modal.querySelector('#wizard-step-1 .lead-form-title');
+        if (modalTitle) {
+          modalTitle.textContent = `Consult on Verified ${interestType.toUpperCase()} Assets`;
+        }
+      }
+    }
+  };
+
+  const closeModal = () => {
+    if (modal) modal.classList.remove('active');
+  };
+
+  const bindModalTriggers = () => {
+    document.querySelectorAll('.btn-open-modal').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const interest = btn.getAttribute('data-interest') || 'properties';
+        openModal(interest);
+      });
+    });
+  };
+
+  if (btnCloseModal) btnCloseModal.addEventListener('click', closeModal);
+
+  optionCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const parent = card.parentNode;
+      const stepCards = parent.querySelectorAll('.wizard-option-card');
+      stepCards.forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+
+      const step = parseInt(parent.getAttribute('data-step'));
+      const val = card.getAttribute('data-value');
+
+      if (step === 1) leadData.interest = val;
+      if (step === 2) leadData.locality = val;
+      if (step === 3) leadData.budget = val;
+    });
+  });
+
+  document.querySelectorAll('.btn-next-step').forEach(btn => {
+    btn.addEventListener('click', () => {
+      updateWizardStep(activeStep + 1);
+    });
+  });
+
+  document.querySelectorAll('.btn-prev-step').forEach(btn => {
+    btn.addEventListener('click', () => {
+      updateWizardStep(activeStep - 1);
+    });
+  });
+
+  if (finalForm) {
+    finalForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const nameVal = document.getElementById('wz-name').value.trim();
+      const emailVal = document.getElementById('wz-email').value.trim();
+      const phoneVal = document.getElementById('wz-phone').value.trim();
+
+      if (!nameVal || !emailVal || !phoneVal) {
+        alert('Please fill out all fields to consult your advisor.');
+        return;
+      }
+
+      leadData.name = nameVal;
+      leadData.email = emailVal;
+      leadData.phone = phoneVal;
+
+      await sendLeadEmail({
+        Name: leadData.name,
+        Email: leadData.email,
+        Phone: leadData.phone,
+        Interest: leadData.interest,
+        Locality: leadData.locality,
+        Budget: leadData.budget,
+        Source: 'Contact Us – Lead Wizard'
+      }, `New Lead: ${leadData.name} – ${leadData.interest}`);
+
+      updateWizardStep(5);
+    });
+  }
+
+  const btnCloseSuccess = document.getElementById('wz-close-btn');
+  if (btnCloseSuccess) btnCloseSuccess.addEventListener('click', closeModal);
+
+  // --- PREMIUM INQUIRY FORM SUBMISSION ---
+  const contactForm = document.getElementById('rcv-contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('ct-name').value.trim();
+      const email = document.getElementById('ct-email').value.trim();
+      const phone = document.getElementById('ct-phone').value.trim();
+      const interest = document.getElementById('ct-interest').value;
+      const message = document.getElementById('ct-message').value.trim();
+
+      if (!name || !email || !phone || !interest) {
+        alert('Please fill out all required fields to consult an advisor.');
+        return;
+      }
+
+      await sendLeadEmail({
+        Name: name,
+        Email: email,
+        Phone: phone,
+        Interest: interest,
+        Message: message,
+        Source: 'Contact Us – Direct Form'
+      }, `New Inquiry: ${name} – ${interest}`);
+
+      // Prefill wizard step 4 data and open directly to success modal panel
+      leadData = { name, email, phone, interest, locality: 'Devanahalli', budget: 'tier-2' };
+      
+      const successTitle = modal.querySelector('#wizard-step-5 .lead-form-title');
+      if (successTitle) {
+        successTitle.textContent = "Consultation Scheduled Successfully";
+      }
+      const successDesc = modal.querySelector('#wizard-step-5 .lead-form-subtitle');
+      if (successDesc) {
+        successDesc.textContent = "Your details have been pre-screened by our executive queue. A senior RCV advisor is assigned and will reach out to you within 15 minutes.";
+      }
+
+      openModal();
+      updateWizardStep(5);
+      contactForm.reset();
+    });
+  }
+
+  // Footer newsletter submission
+  const newsletterForm = document.getElementById('footer-newsletter-form');
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const emailInput = document.getElementById('newsletter-email');
+      const emailVal = emailInput.value.trim();
+      if (!emailVal) return;
+      await sendLeadEmail({
+        Email: emailVal,
+        Source: 'Contact Us – Newsletter Signup'
+      }, `Newsletter Signup: ${emailVal}`);
+      alert('Thank you for subscribing to our newsletter!');
+      emailInput.value = '';
+    });
+  }
+
+  bindModalTriggers();
+});

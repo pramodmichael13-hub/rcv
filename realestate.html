@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Elite Properties & Luxury Real Estate Bangalore | RedCarpet Ventures</title>
+  <meta name="description"
+    content="Discover Bangalore's finest 100% verified luxury apartments, custom villas, and gated plots in premium corridors. Protected by RCV TitleGuard™ and SafeEscrow™ transaction security with zero brokerage fee.">
+  <meta name="keywords"
+    content="Real Estate Bangalore, Luxury Apartments Bangalore, Devanahalli Villas, Sarjapur Road Smart Homes, Gated Plots Hennur, Bangalore Locality Hub, Real Estate Escrow, TitleGuard, RedCarpet Ventures Properties">
+  <meta name="author" content="Red Carpet Ventures">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Premium Stylesheets -->
+  <link rel="stylesheet" href="./src/styles/index.css">
+</head>
+
+<body>
+
+  <!-- Background Ambient Glows -->
+  <div class="ambient-glow glow-top-right"></div>
+  <div class="ambient-glow glow-mid-left"></div>
+  <div class="ambient-glow glow-bottom-right"></div>
+
+  <!-- --- HEADER & NAVIGATION --- -->
+  <header id="main-header">
+    <a href="./" class="logo" id="logo-link">
+      <img src="./assets/images/logo.png" alt="Red Carpet Ventures"
+        style="height: 50px; width: auto; object-fit: contain; margin-right: 8px;">
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li class="active" data-view="properties"><a href="#properties-section">Elite Properties</a></li>
+        <li><a href="./construction">RCV Build</a></li>
+        <li><a href="./interiordesign">Luxury Interiors</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" onclick="return false;">RCV Intelligence <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px; transition: transform 0.3s ease;"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="./localityhub"><i class="fa-solid fa-map-location-dot" style="font-size: 0.8rem; color: var(--accent-red);"></i> Locality Hub</a></li>
+            <li><a href="./trustcenter"><i class="fa-solid fa-shield-halved" style="font-size: 0.8rem; color: var(--accent-emerald);"></i> Trust Center</a></li>
+          </ul>
+        </li>
+        <li><a href="./contactus">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <div class="nav-cta">
+      <a href="tel:+919611976003" class="nav-phone" id="header-phone-link">
+        <i class="fa-solid fa-phone-volume"></i>
+        <span>+91 96119 76003</span>
+      </a>
+      <button class="btn-premium btn-gold btn-open-modal" id="header-consult-btn">
+        Consult Advisor
+        <i class="fa-solid fa-arrow-right btn-arrow"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- --- MAIN CONTENT CONTAINER --- -->
+  <main>
+
+
+
+    <!-- --- 2. FEATURED PROPERTIES SECTION --- -->
+    <section class="section-container" id="properties-section">
+      <div class="section-header">
+        <span class="section-tag">Elite Portfolio</span>
+        <h2 class="section-title">Verified Luxury Listings</h2>
+        <p class="section-desc">Every apartment, villa, and plot in our catalog contains validated BBMP/BMRDA approvals,
+          explicit RERA credentials, and an RCV TitleGuard™ certificate.</p>
+      </div>
+
+      <div class="packages-filter-bar">
+        <div class="filter-tabs">
+          <button class="filter-tab-btn active" data-filter="all" id="btn-filter-all">All Listings</button>
+          <button class="filter-tab-btn" data-filter="apartments" id="btn-filter-apts">Apartments</button>
+          <button class="filter-tab-btn" data-filter="villas" id="btn-filter-villas">Villas</button>
+          <button class="filter-tab-btn" data-filter="plots" id="btn-filter-plots">Premium Plots</button>
+        </div>
+
+        <div class="search-filter-box">
+          <input type="text" class="form-input" style="padding: 10px 16px; font-size: 0.88rem; width: 250px;"
+            placeholder="Search by Locality or Title..." id="input-search-locality">
+        </div>
+      </div>
+
+      <!-- Properties Grid (Dynamically Populated & Static SEO Fallback) -->
+      <div class="properties-grid" id="properties-listings-grid">
+
+        <!-- Static Property Card 1 (Nelamangala Green Plots) -->
+        <div class="glass-panel prop-card" id="seo-prop-1">
+          <div class="prop-img-box">
+            <img src="./assets/images/realestate/nelmangala_green_plots.jpeg"
+              alt="Nelamangala Green Plots" class="prop-img">
+            <span class="prop-status-tag">Ready to Construct</span>
+            <span class="prop-apprec-tag">18% YoY Growth</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-meta-row">
+              <span class="prop-locality">
+                <i class="fa-solid fa-location-dot" style="color: var(--accent-red)"></i>
+                Nelamangala D Mart
+              </span>
+              <span class="logo-badge" style="border-color: rgba(255,255,255,0.05); color: var(--text-muted);">Ready for Registration</span>
+            </div>
+            <h3 class="prop-title">Nelamangala Green Plots</h3>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-house-laptop"></i>
+                <span>Premium Gated Villa Plots</span>
+              </div>
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-maximize"></i>
+                <span>1,200 - 2,400 Sq.Ft</span>
+              </div>
+            </div>
+            <div class="prop-trust-row" style="margin-top: 1.2rem;">
+              <div class="prop-trust-score">
+                <i class="fa-solid fa-shield-halved" style="color: var(--accent-blue);"></i>
+                <span>TitleGuard™ Score:</span>
+              </div>
+              <span class="score-badge">95/100</span>
+            </div>
+            <div class="prop-bottom">
+              <div>
+                <span class="prop-price-label">Guideline Value</span>
+                <p class="prop-price">₹15 Lakhs onwards</p>
+              </div>
+              <button class="btn-premium btn-outline-gold btn-open-modal" style="padding: 10px 18px; font-size: 0.8rem;"
+                data-prop-title="Nelamangala Green Plots">
+                Inquire
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Static Property Card 2 (Sri Sai Srinivas Enclave) -->
+        <div class="glass-panel prop-card" id="seo-prop-2">
+          <div class="prop-img-box">
+            <img src="./assets/images/realestate/sri_sai_srinavas_enclave.jpeg"
+              alt="Sri Sai Srinivas Enclave" class="prop-img">
+            <span class="prop-status-tag">Ready to Construct</span>
+            <span class="prop-apprec-tag">15% YoY Growth</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-meta-row">
+              <span class="prop-locality">
+                <i class="fa-solid fa-location-dot" style="color: var(--accent-red)"></i>
+                Rajankunte, Yelahanka
+              </span>
+              <span class="logo-badge" style="border-color: rgba(255,255,255,0.05); color: var(--text-muted);">DC Converted / Bank Loan Approved</span>
+            </div>
+            <h3 class="prop-title">Sri Sai Srinivas Enclave</h3>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-house-laptop"></i>
+                <span>Prime Gated Plot Enclave</span>
+              </div>
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-maximize"></i>
+                <span>900 - 1,500 Sq.Ft</span>
+              </div>
+            </div>
+            <div class="prop-trust-row" style="margin-top: 1.2rem;">
+              <div class="prop-trust-score">
+                <i class="fa-solid fa-shield-halved" style="color: var(--accent-blue);"></i>
+                <span>TitleGuard™ Score:</span>
+              </div>
+              <span class="score-badge">94/100</span>
+            </div>
+            <div class="prop-bottom">
+              <div>
+                <span class="prop-price-label">Guideline Value</span>
+                <p class="prop-price">₹38 Lakhs onwards</p>
+              </div>
+              <button class="btn-premium btn-outline-gold btn-open-modal" style="padding: 10px 18px; font-size: 0.8rem;"
+                data-prop-title="Sri Sai Srinivas Enclave">
+                Inquire
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Static Property Card 3 (Brigade Insignia) -->
+        <div class="glass-panel prop-card" id="seo-prop-3">
+          <div class="prop-img-box">
+            <img src="./assets/images/realestate/brigade_insignia.jpeg"
+              alt="Brigade Insignia" class="prop-img">
+            <span class="prop-status-tag">Under Construction</span>
+            <span class="prop-apprec-tag">16% YoY Growth</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-meta-row">
+              <span class="prop-locality">
+                <i class="fa-solid fa-location-dot" style="color: var(--accent-red)"></i>
+                Yelahanka, North Bengaluru
+              </span>
+              <span class="logo-badge" style="border-color: rgba(255,255,255,0.05); color: var(--text-muted);">A-Grade Premium Developer</span>
+            </div>
+            <h3 class="prop-title">Brigade Insignia</h3>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-house-laptop"></i>
+                <span>3, 4 & 5 BHK Luxury Apartments</span>
+              </div>
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-maximize"></i>
+                <span>2,200 - 3,500 Sq.Ft</span>
+              </div>
+            </div>
+            <div style="margin-top: 10px; margin-bottom: 10px;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--text-secondary); margin-bottom: 3px;">
+                <span>Construction Milestones</span>
+                <strong>30%</strong>
+              </div>
+              <div style="height: 6px; background: rgba(17,24,39,0.06); border-radius: 3px; overflow: hidden;">
+                <div style="height: 100%; width: 30%; background: linear-gradient(90deg, var(--accent-red), var(--accent-blue)); border-radius: 3px;"></div>
+              </div>
+            </div>
+            <div class="prop-trust-row" style="margin-top: 0.5rem;">
+              <div class="prop-trust-score">
+                <i class="fa-solid fa-shield-halved" style="color: var(--accent-blue);"></i>
+                <span>TitleGuard™ Score:</span>
+              </div>
+              <span class="score-badge">97/100</span>
+            </div>
+            <div class="prop-bottom">
+              <div>
+                <span class="prop-price-label">Guideline Value</span>
+                <p class="prop-price">₹3 Crore onwards</p>
+              </div>
+              <button class="btn-premium btn-outline-gold btn-open-modal" style="padding: 10px 18px; font-size: 0.8rem;"
+                data-prop-title="Brigade Insignia">
+                Inquire
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Static Property Card 4 (Birla Trimaya) -->
+        <div class="glass-panel prop-card" id="seo-prop-4">
+          <div class="prop-img-box">
+            <img src="./assets/images/realestate/birla_trimaya.jpeg"
+              alt="Birla Trimaya" class="prop-img">
+            <span class="prop-status-tag">Under Construction</span>
+            <span class="prop-apprec-tag">20% YoY Growth</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-meta-row">
+              <span class="prop-locality">
+                <i class="fa-solid fa-location-dot" style="color: var(--accent-red)"></i>
+                Devanahalli
+              </span>
+              <span class="logo-badge" style="border-color: rgba(255,255,255,0.05); color: var(--text-muted);">High Growth Airport Corridor</span>
+            </div>
+            <h3 class="prop-title">Birla Trimaya</h3>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-house-laptop"></i>
+                <span>1, 2 & 3 BHK Elite Smart Homes</span>
+              </div>
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-maximize"></i>
+                <span>1,100 - 2,100 Sq.Ft</span>
+              </div>
+            </div>
+            <div style="margin-top: 10px; margin-bottom: 10px;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--text-secondary); margin-bottom: 3px;">
+                <span>Construction Milestones</span>
+                <strong>40%</strong>
+              </div>
+              <div style="height: 6px; background: rgba(17,24,39,0.06); border-radius: 3px; overflow: hidden;">
+                <div style="height: 100%; width: 40%; background: linear-gradient(90deg, var(--accent-red), var(--accent-blue)); border-radius: 3px;"></div>
+              </div>
+            </div>
+            <div class="prop-trust-row" style="margin-top: 0.5rem;">
+              <div class="prop-trust-score">
+                <i class="fa-solid fa-shield-halved" style="color: var(--accent-blue);"></i>
+                <span>TitleGuard™ Score:</span>
+              </div>
+              <span class="score-badge">96/100</span>
+            </div>
+            <div class="prop-bottom">
+              <div>
+                <span class="prop-price-label">Guideline Value</span>
+                <p class="prop-price">₹75 Lakhs onwards</p>
+              </div>
+              <button class="btn-premium btn-outline-gold btn-open-modal" style="padding: 10px 18px; font-size: 0.8rem;"
+                data-prop-title="Birla Trimaya">
+                Inquire
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Static Property Card 5 (Exclusive Residential Plot) -->
+        <div class="glass-panel prop-card" id="seo-prop-5">
+          <div class="prop-img-box">
+            <img src="./assets/images/realestate/exclusive_residential_plot.jpeg"
+              alt="Exclusive Residential Plot" class="prop-img">
+            <span class="prop-status-tag">Ready to Construct</span>
+            <span class="prop-apprec-tag">17% YoY Growth</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-meta-row">
+              <span class="prop-locality">
+                <i class="fa-solid fa-location-dot" style="color: var(--accent-red)"></i>
+                Tumkur
+              </span>
+              <span class="logo-badge" style="border-color: rgba(255,255,255,0.05); color: var(--text-muted);">Tumkur High Investment Potential</span>
+            </div>
+            <h3 class="prop-title">Exclusive Residential Plot</h3>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-house-laptop"></i>
+                <span>Premium Plotted Development</span>
+              </div>
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-maximize"></i>
+                <span>1,200 - 2,400 Sq.Ft</span>
+              </div>
+            </div>
+            <div class="prop-trust-row" style="margin-top: 1.2rem;">
+              <div class="prop-trust-score">
+                <i class="fa-solid fa-shield-halved" style="color: var(--accent-blue);"></i>
+                <span>TitleGuard™ Score:</span>
+              </div>
+              <span class="score-badge">93/100</span>
+            </div>
+            <div class="prop-bottom">
+              <div>
+                <span class="prop-price-label">Guideline Value</span>
+                <p class="prop-price">₹20 Lakhs onwards</p>
+              </div>
+              <button class="btn-premium btn-outline-gold btn-open-modal" style="padding: 10px 18px; font-size: 0.8rem;"
+                data-prop-title="Exclusive Residential Plot">
+                Inquire
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Static Property Card 6 (Blissful Haven Plots) -->
+        <div class="glass-panel prop-card" id="seo-prop-6">
+          <div class="prop-img-box">
+            <img src="./assets/images/realestate/blissful_haven_plots.jpeg"
+              alt="Blissful Haven Plots" class="prop-img">
+            <span class="prop-status-tag">Ready to Construct</span>
+            <span class="prop-apprec-tag">16% YoY Growth</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-meta-row">
+              <span class="prop-locality">
+                <i class="fa-solid fa-location-dot" style="color: var(--accent-red)"></i>
+                Hanumantharayappa Badawane, Bengaluru
+              </span>
+              <span class="logo-badge" style="border-color: rgba(255,255,255,0.05); color: var(--text-muted);">Peaceful Residential Area</span>
+            </div>
+            <h3 class="prop-title">Blissful Haven Plots</h3>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-house-laptop"></i>
+                <span>Peaceful Residential Plots</span>
+              </div>
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-maximize"></i>
+                <span>1,200 - 2,400 Sq.Ft</span>
+              </div>
+            </div>
+            <div class="prop-trust-row" style="margin-top: 1.2rem;">
+              <div class="prop-trust-score">
+                <i class="fa-solid fa-shield-halved" style="color: var(--accent-blue);"></i>
+                <span>TitleGuard™ Score:</span>
+              </div>
+              <span class="score-badge">95/100</span>
+            </div>
+            <div class="prop-bottom">
+              <div>
+                <span class="prop-price-label">Guideline Value</span>
+                <p class="prop-price">₹45 Lakhs onwards</p>
+              </div>
+              <button class="btn-premium btn-outline-gold btn-open-modal" style="padding: 10px 18px; font-size: 0.8rem;"
+                data-prop-title="Blissful Haven Plots">
+                Inquire
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Static Property Card 7 (Serenity Springs – Nandishwara Enclave) -->
+        <div class="glass-panel prop-card" id="seo-prop-7">
+          <div class="prop-img-box">
+            <img src="./assets/images/realestate/serenity_springs-nandishwara_enclave.jpeg"
+              alt="Serenity Springs – Nandishwara Enclave" class="prop-img">
+            <span class="prop-status-tag">Ready to Construct</span>
+            <span class="prop-apprec-tag">18% YoY Growth</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-meta-row">
+              <span class="prop-locality">
+                <i class="fa-solid fa-location-dot" style="color: var(--accent-red)"></i>
+                North Bangalore
+              </span>
+              <span class="logo-badge" style="border-color: rgba(255,255,255,0.05); color: var(--text-muted);">Sustainable Gated Community</span>
+            </div>
+            <h3 class="prop-title">Serenity Springs – Nandishwara Enclave</h3>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-house-laptop"></i>
+                <span>Gated Community Plots</span>
+              </div>
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-maximize"></i>
+                <span>1,200 - 2,400 Sq.Ft</span>
+              </div>
+            </div>
+            <div class="prop-trust-row" style="margin-top: 1.2rem;">
+              <div class="prop-trust-score">
+                <i class="fa-solid fa-shield-halved" style="color: var(--accent-blue);"></i>
+                <span>TitleGuard™ Score:</span>
+              </div>
+              <span class="score-badge">96/100</span>
+            </div>
+            <div class="prop-bottom">
+              <div>
+                <span class="prop-price-label">Guideline Value</span>
+                <p class="prop-price">₹2499/sq.ft onwards</p>
+              </div>
+              <button class="btn-premium btn-outline-gold btn-open-modal" style="padding: 10px 18px; font-size: 0.8rem;"
+                data-prop-title="Serenity Springs – Nandishwara Enclave">
+                Inquire
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Static Property Card 8 (Seethakempanahalli Serenity) -->
+        <div class="glass-panel prop-card" id="seo-prop-8">
+          <div class="prop-img-box">
+            <img src="./assets/images/realestate/seethakempanahalli_serenity.jpeg"
+              alt="Seethakempanahalli Serenity" class="prop-img">
+            <span class="prop-status-tag">Ready to Construct</span>
+            <span class="prop-apprec-tag">19% YoY Growth</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-meta-row">
+              <span class="prop-locality">
+                <i class="fa-solid fa-location-dot" style="color: var(--accent-red)"></i>
+                Yelahanka
+              </span>
+              <span class="logo-badge" style="border-color: rgba(255,255,255,0.05); color: var(--text-muted);">Premium Infrastructure</span>
+            </div>
+            <h3 class="prop-title">Seethakempanahalli Serenity</h3>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-house-laptop"></i>
+                <span>Premium Residential Plots</span>
+              </div>
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-maximize"></i>
+                <span>1,200 - 2,400 Sq.Ft</span>
+              </div>
+            </div>
+            <div class="prop-trust-row" style="margin-top: 1.2rem;">
+              <div class="prop-trust-score">
+                <i class="fa-solid fa-shield-halved" style="color: var(--accent-blue);"></i>
+                <span>TitleGuard™ Score:</span>
+              </div>
+              <span class="score-badge">95/100</span>
+            </div>
+            <div class="prop-bottom">
+              <div>
+                <span class="prop-price-label">Guideline Value</span>
+                <p class="prop-price">₹2899/sq.ft onwards</p>
+              </div>
+              <button class="btn-premium btn-outline-gold btn-open-modal" style="padding: 10px 18px; font-size: 0.8rem;"
+                data-prop-title="Seethakempanahalli Serenity">
+                Inquire
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --- 3. WHY CHOOSE RCV PROPERTIES (TRUST PILLARS) --- -->
+    <section class="section-container" id="why-rcv-section" style="background-color: var(--bg-secondary);">
+      <div class="section-header">
+        <span class="section-tag"
+          style="border-color: var(--accent-blue); color: var(--accent-blue); background: rgba(2, 132, 199, 0.04);">Transaction
+          Shield</span>
+        <h2 class="section-title">Namma Bengaluru's Trust Framework</h2>
+        <p class="section-desc">Traditional brokerages push inventories. RCV enforces engineering and legal checks on
+          every square foot to shield your hard-earned capital.</p>
+      </div>
+
+      <div class="trust-cards-grid">
+        <!-- Trust Card 1 -->
+        <div class="trust-card" id="trust-card-re-1">
+          <div class="trust-card-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="trust-card-title">TitleGuard™ Assured</h3>
+          <p class="trust-card-desc">Every listing goes through a comprehensive 450+ point legal verification of mother
+            deeds, BBMP A-Khata records, and encumbrance certificates prior to cataloging.</p>
+          <span class="logo-badge" style="border-color: rgba(220, 38, 38, 0.2); color: var(--accent-red);">100% Vetted
+            Titles</span>
+        </div>
+
+        <!-- Trust Card 2 -->
+        <div class="trust-card" id="trust-card-re-2">
+          <div class="trust-card-icon">
+            <i class="fa-solid fa-money-bill-transfer"></i>
+          </div>
+          <h3 class="trust-card-title">SafeEscrow™ Payment Pool</h3>
+          <p class="trust-card-desc">Milestone-linked transaction locking. Your reservation capital remains secure in a
+            tri-party escrow pool, disbursed only after technical and legal milestones are fully certified.</p>
+          <span class="logo-badge" style="border-color: rgba(2, 132, 199, 0.2); color: var(--accent-blue);">Capital
+            Protected</span>
+        </div>
+
+        <!-- Trust Card 3 -->
+        <div class="trust-card" id="trust-card-re-3">
+          <div class="trust-card-icon">
+            <i class="fa-solid fa-file-signature"></i>
+          </div>
+          <h3 class="trust-card-title">100% RERA & Legal Safety</h3>
+          <p class="trust-card-desc">Zero ambiguity. We only guide you to properties that hold explicit Karnataka RERA
+            registration licenses alongside clear local planning clearances (BDA, BMRDA, BIAPPA).</p>
+          <span class="logo-badge"
+            style="border-color: rgba(16, 185, 129, 0.2); color: var(--accent-emerald);">Risk-Free Possession</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 4. BANGALORE LOCALITY EXPERTISE HUB --- -->
+    <section class="section-container" id="locality-section">
+      <div class="section-header">
+        <span class="section-tag">Micro-Market Intelligence</span>
+        <h2 class="section-title">Bangalore Locality Hub</h2>
+        <p class="section-desc">Detailed metrics on annual capital gains, average registration rates, RERA safety rules,
+          and direct travel times to key technology corridors.</p>
+      </div>
+
+      <div class="localities-grid" id="locality-data-grid">
+        <!-- Locality cards will be dynamically populated here by script -->
+      </div>
+    </section>
+
+    <!-- --- 5. PREMIUM BUILDER PARTNERS --- -->
+    <section class="section-container" id="builder-section" style="background-color: var(--bg-secondary);">
+      <div class="section-header">
+        <span class="section-tag">Direct Collaboration</span>
+        <h2 class="section-title">Premium Developer Partnerships</h2>
+        <p class="section-desc">We collaborate directly with Bangalore's top-tier developers. Our relationships unlock
+          exclusive price sheets, legal disclosures, and 0% brokerage direct access.</p>
+      </div>
+
+      <div class="builder-grid">
+        <!-- Builder 1 -->
+        <div class="builder-card">
+          <span class="builder-tag">Prestige Group</span>
+          <h3 class="builder-name">Prestige Luxury Living</h3>
+          <p class="builder-desc">Renowned for premium luxury apartments and gated communities. RCV offers certified
+            direct pricing on ready-to-move-in and newly launched properties.</p>
+        </div>
+
+        <!-- Builder 2 -->
+        <div class="builder-card">
+          <span class="builder-tag">Brigade Group</span>
+          <h3 class="builder-name">Brigade Signature Enclaves</h3>
+          <p class="builder-desc">Setting landmarks in tech corridors like Hebbal, Whitefield, and Yelahanka. We provide
+            verified, developer-direct inventory with pre-cleared TitleGuard files.</p>
+        </div>
+
+        <!-- Builder 3 -->
+        <div class="builder-card">
+          <span class="builder-tag">Birla Estates</span>
+          <h3 class="builder-name">Birla Integrated Corridors</h3>
+          <p class="builder-desc">Defining futuristic luxury in North Bangalore. We showcase their landmark Birla
+            Trimaya layouts, offering complete home automation integration advice.</p>
+        </div>
+
+        <!-- Builder 4 -->
+        <div class="builder-card">
+          <span class="builder-tag">Sobha Limited</span>
+          <h3 class="builder-name">Sobha Precision Engineering</h3>
+          <p class="builder-desc">World-class quality benchmarks and structural details. Highly recommended by our
+            engineering auditors for waterproofing and fit-out consistency.</p>
+        </div>
+
+        <!-- Builder 5 -->
+        <div class="builder-card">
+          <span class="builder-tag">Godrej Properties</span>
+          <h3 class="builder-name">Godrej Green Enclaves</h3>
+          <p class="builder-desc">Focusing on futuristic eco-communities with high organic appreciation parameters. Zero
+            brokerage direct RCV registry assistance.</p>
+        </div>
+
+        <!-- Builder 6 -->
+        <div class="builder-card">
+          <span class="builder-tag">Total Environment</span>
+          <h3 class="builder-name">Total Environment Design</h3>
+          <p class="builder-desc">Architect-designed signature luxury villas with integrated foliage. Custom spatial
+            interior matching and structural QASCON reports validated by RCV.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 6. PROPERTY INVESTMENT BENEFITS --- -->
+    <section class="section-container" id="benefits-section">
+      <div class="section-header">
+        <span class="section-tag"
+          style="border-color: var(--accent-emerald); color: var(--accent-emerald); background: rgba(16, 185, 129, 0.04);">Capital
+          Appreciators</span>
+        <h2 class="section-title">Why Invest in Bangalore Luxury Real Estate</h2>
+        <p class="section-desc">Bangalore remains India's primary wealth-creation engine. Tech corridor property
+          appreciation consistently outpaces domestic inflation benchmarks.</p>
+      </div>
+
+      <div class="trust-cards-grid" style="grid-template-columns: repeat(4, 1fr);">
+        <!-- Benefit 1 -->
+        <div class="trust-card" style="padding: 30px;">
+          <div class="trust-card-icon"
+            style="background: rgba(16, 185, 129, 0.05); color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.15);">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3 class="trust-card-title" style="font-size: 1.2rem;">14% - 22% Appreciation</h3>
+          <p class="trust-card-desc" style="font-size: 0.85rem; margin-bottom: 0;">Infrastructure growth along the
+            Airport Road (NH44), Devanahalli, and Hebbal corridors has unlocked rapid YoY capital gains for land and
+            premium villa layouts.</p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="trust-card" style="padding: 30px;">
+          <div class="trust-card-icon"
+            style="background: rgba(16, 185, 129, 0.05); color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.15);">
+            <i class="fa-solid fa-percent"></i>
+          </div>
+          <h3 class="trust-card-title" style="font-size: 1.2rem;">4.5% - 6.5% Rental Yields</h3>
+          <p class="trust-card-desc" style="font-size: 0.85rem; margin-bottom: 0;">High corporate density in Sarjapur,
+            ORR, and Whitefield guarantees consistent premium tenant demand for multi-BHK luxury high-rises and tech
+            parks.</p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="trust-card" style="padding: 30px;">
+          <div class="trust-card-icon"
+            style="background: rgba(16, 185, 129, 0.05); color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.15);">
+            <i class="fa-solid fa-train-subway"></i>
+          </div>
+          <h3 class="trust-card-title" style="font-size: 1.2rem;">Transit Corridor Boosts</h3>
+          <p class="trust-card-desc" style="font-size: 0.85rem; margin-bottom: 0;">Completion of metro line extensions
+            (Purple & Blue lines) and the Peripheral Ring Road triggers instant capital surges for surrounding verified
+            residential enclaves.</p>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="trust-card" style="padding: 30px;">
+          <div class="trust-card-icon"
+            style="background: rgba(16, 185, 129, 0.05); color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.15);">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="trust-card-title" style="font-size: 1.2rem;">Inflation Hedge</h3>
+          <p class="trust-card-desc" style="font-size: 0.85rem; margin-bottom: 0;">Prestige land holdings and custom
+            villa architecture provide solid protection against market volatility, anchoring multi-generational wealth
+            securely.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 7. REAL ESTATE PROCESS (HOW IT WORKS) --- -->
+    <section class="section-container glass-panel" id="process-section" style="margin: 0 6%; border-radius: 30px;">
+      <div class="section-header" style="text-align: center; margin: 0 auto 5rem auto;">
+        <span class="section-tag" style="border-color: var(--accent-emerald); color: var(--accent-emerald);">Transparent
+          Journey</span>
+        <h2 class="section-title">Your Risk-Free Path to Possession</h2>
+        <p class="section-desc" style="margin: 0 auto; max-width: 600px;">How we protect your capital and ensure total
+          quality from the very first consultation call up to the handover.</p>
+      </div>
+
+      <div class="process-grid">
+        <!-- Step 1 -->
+        <div class="glass-panel process-card" id="proc-card-1">
+          <div class="process-icon-box">
+            <i class="fa-regular fa-comments"></i>
+          </div>
+          <h3 class="process-card-title">1. Consult & Profile</h3>
+          <p class="process-card-desc">Book an advisory session. We isolate verified properties matching your travel
+            commute preferences, micro-market capital yields, and TitleGuard requirements.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glass-panel process-card" id="proc-card-2">
+          <div class="process-icon-box">
+            <i class="fa-solid fa-rectangle-list"></i>
+          </div>
+          <h3 class="process-card-title">2. Curation & Engineering Check</h3>
+          <p class="process-card-desc">Receive a personalized, audited list of luxury properties containing complete
+            RERA details, layout approvals, and structural reports before scheduling visits.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glass-panel process-card" id="proc-card-3">
+          <div class="process-icon-box">
+            <i class="fa-solid fa-car"></i>
+          </div>
+          <h3 class="process-card-title">3. Private Chauffeur Visits</h3>
+          <p class="process-card-desc">Tour short-listed enclaves in comfort. You will be accompanied by an RCV
+            structural auditor who points out actual engineering standards on-site.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="glass-panel process-card" id="proc-card-4">
+          <div class="process-icon-box">
+            <i class="fa-solid fa-signature"></i>
+          </div>
+          <h3 class="process-card-title">4. Escrow Milestone Closure</h3>
+          <p class="process-card-desc">Lock deals via tri-party SafeEscrow™ pool. Your funds are deposited securely,
+            ensuring structural completion milestones are certified before money is released.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 8. CLIENT TESTIMONIALS --- -->
+    <section class="section-container" id="testimonials-section">
+      <div class="section-header" style="text-align: center; margin: 0 auto 5rem auto;">
+        <span class="section-tag">Bangalore Voices</span>
+        <h2 class="section-title">Endorsed by Top Executives</h2>
+        <p class="section-desc" style="margin: 0 auto; max-width: 600px;">Read about how we successfully managed real
+          estate acquisitions, quality villas, and luxury interiors for Bangalore's leading tech professionals and NRIs.
+        </p>
+      </div>
+
+      <div class="testimonial-carousel" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+        <!-- Testi 1 -->
+        <div class="glass-panel testi-card" id="testi-card-1" style="width: 100%;">
+          <p class="testi-quote">"Buying premium plots in Yelahanka while working in Seattle seemed highly risky. RCV
+            took over completely. They provided the TitleGuard legal analysis and let me deposit booking fees in
+            SafeEscrow. Truly outstanding service."</p>
+          <div class="testi-user">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80"
+              alt="Srinath K." class="testi-avatar">
+            <div>
+              <h4 class="testi-name">Srinath Raghavan</h4>
+              <p class="testi-role">Staff Engineer, Google (NRI)</p>
+              <div class="testi-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testi 2 -->
+        <div class="glass-panel testi-card" id="testi-card-2" style="width: 100%;">
+          <p class="testi-quote">"Unlike standard property brokers who push listings aggressively, RCV gave me a
+            detailed micro-market capital growth overview for Sarjapur and Hebbal. Their zero-brokerage direct partner
+            channel saved us substantial overhead."</p>
+          <div class="testi-user">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80"
+              alt="Neha Sharma" class="testi-avatar">
+            <div>
+              <h4 class="testi-name">Neha Sharma</h4>
+              <p class="testi-role">Co-Founder, Bangalore FinTech Startup</p>
+              <div class="testi-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testi 3 -->
+        <div class="glass-panel testi-card" id="testi-card-3" style="width: 100%;">
+          <p class="testi-quote">"I short-listed Devanahalli Zenith Mansions after seeing RCV's physical engineering
+            audit reports on steel grade and concrete tightness. They negotiated directly with the developer, ensuring
+            100% legal alignment."</p>
+          <div class="testi-user">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80"
+              alt="Rajeev N." class="testi-avatar">
+            <div>
+              <h4 class="testi-name">Rajeev Nambiar</h4>
+              <p class="testi-role">VP Operations, Manyata Tech Park Corporate</p>
+              <div class="testi-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 9. FAQ SECTION --- -->
+    <section class="section-container" id="faq-section" style="background-color: var(--bg-secondary);">
+      <div class="section-header" style="text-align: center; margin: 0 auto 4rem auto;">
+        <span class="section-tag">Direct Answers</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc" style="margin: 0 auto; max-width: 600px;">Clear, honest, and expert explanations
+          regarding RCV's luxury real estate and transaction protection models.</p>
+      </div>
+
+      <div class="faq-accordion">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">Do you charge brokerage or consultation fees?</span>
+            <div class="faq-icon-box">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-answer">
+              No. RCV operates on a direct collaboration model with A-grade builders and developers. Our real estate
+              advisory, chauffered site visits, and curation services are 100% free of brokerage charges for premium
+              properties, guaranteeing zero commission conflicts.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">What is the RCV TitleGuard™ analysis score?</span>
+            <div class="faq-icon-box">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-answer">
+              TitleGuard™ is our proprietary 450-point title-shield auditing system led by expert real estate legal
+              evaluators. We score properties out of 100 based on mother deed trace history, land clearances (BDA,
+              BMRDA, BIAPPA), BBMP A-Khata validation, conversion records, and encumbrance checks. We never display
+              properties scoring below 90/100.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">How does SafeEscrow™ protect property buyers?</span>
+            <div class="faq-icon-box">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-answer">
+              Under traditional transaction models, builders receive high advances with zero accountability. SafeEscrow™
+              locks milestone funds in a tri-party escrow bank pool. Payments are only released to contractors or
+              developers after an RCV lead engineering auditor certifies the structure completes specific parameters
+              (e.g. excavation core compression tests, brick layouts).
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">Do you provide assistance with NRI banking, loans, and registration?</span>
+            <div class="faq-icon-box">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-answer">
+              Yes. We provide complete end-to-end concierge services for NRI home buyers and local tech professionals,
+              including banking clearances, NRE/NRO transaction routing, corporate home loan partnerships, sub-registrar
+              filing, registry representation, and power of attorney verification.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 10. STRONG FINAL CTA SECTION --- -->
+    <section class="section-container final-cta" id="cta-section">
+      <div class="glass-panel cta-banner" id="cta-banner-box"
+        style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; text-align: left; align-items: center; padding: 50px 60px;">
+        <div>
+          <h2 class="cta-title" style="font-size: 2.2rem; line-height: 1.2; margin-bottom: 1.5rem;">Secure the Gold
+            Standard of Bangalore Real Estate Today</h2>
+          <p class="cta-desc" style="margin-bottom: 2rem;">Stop risking your capital on unverified titles and delayed
+            possession schedules. Set up a free wealth and real estate strategy session with our senior engineers.</p>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <a href="tel:+919611976003" class="nav-phone" style="font-size: 1.1rem; color: var(--text-primary);">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span>+91 96119 76003 (Direct Hotline)</span>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=919611976003&text=Hi,%20I'm%20interested%20in%20RCV%20luxury%20real%20estate%20listings."
+              target="_blank" class="nav-phone" style="font-size: 1.1rem; color: #25d366;">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Chat on WhatsApp (Instant Response)</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-panel-gold"
+          style="padding: 30px; background: rgba(255, 255, 255, 0.95); border: 1px solid var(--border-red);">
+          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 15px;">Book
+            Free Strategy Session</h3>
+          <form id="realestate-footer-form" novalidate>
+            <div class="form-group" style="margin-bottom: 15px;">
+              <input type="text" class="form-input" id="re-ft-name" placeholder=" " required
+                style="padding: 10px 12px; font-size: 0.9rem;">
+              <label class="form-label" for="re-ft-name" style="font-size: 0.85rem; left: 12px;">Your Name</label>
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+              <input type="email" class="form-input" id="re-ft-email" placeholder=" " required
+                style="padding: 10px 12px; font-size: 0.9rem;">
+              <label class="form-label" for="re-ft-email" style="font-size: 0.85rem; left: 12px;">Work Email</label>
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+              <input type="tel" class="form-input" id="re-ft-phone" placeholder=" " required
+                style="padding: 10px 12px; font-size: 0.9rem;">
+              <label class="form-label" for="re-ft-phone" style="font-size: 0.85rem; left: 12px;">Mobile Number</label>
+            </div>
+            <button type="submit" class="btn-premium btn-gold"
+              style="width: 100%; padding: 12px; border-radius: 8px; font-size: 0.9rem;">
+              Confirm Strategy Booking
+              <i class="fa-solid fa-arrow-right btn-arrow"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- --- 11. FOOTER --- -->
+  <footer id="main-footer">
+    <div class="footer-grid">
+      <!-- Footer Col 1 -->
+      <div class="footer-brand">
+        <a href="./" class="logo">
+          <img src="./assets/images/logo.png" alt="Red Carpet Ventures"
+            style="height: 60px; width: auto; object-fit: contain; margin-right: 8px;">
+        </a>
+        <p class="footer-desc">A premium prop-tech and engineering advisory firm based in Bangalore. Providing
+          full-service verified real estate, structural villa construction, and architectural interior designs.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/share/cDKpJfRsH5kEJKht/?mibextid=qi2Omg" target="_blank" class="social-icon"
+            id="soc-fb"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/redcarpet-ventures/" target="_blank" class="social-icon"
+            id="soc-ln"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/red_carpet_ventures/" target="_blank" class="social-icon" id="soc-ig"><i
+              class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Footer Col 2 -->
+      <div>
+        <h4 class="footer-col-title">Our Solutions</h4>
+        <ul class="footer-links">
+          <li><a href="#properties-section" id="fl-properties">Luxury Apartments</a></li>
+          <li><a href="#properties-section" id="fl-villas">Custom Villas</a></li>
+          <li><a href="#properties-section" id="fl-plots">Gated Land Plots</a></li>
+          <li><a href="./#calculator-section" id="fl-construction">Build Estimator</a></li>
+          <li><a href="./#premium-section" id="fl-interiors">Home Interior Planning</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 3 -->
+      <div>
+        <h4 class="footer-col-title">Trust Center</h4>
+        <ul class="footer-links">
+          <li><a href="./#trust-section" id="fl-escrow">RCV SafeEscrow™</a></li>
+          <li><a href="./#trust-section" id="fl-title">TitleGuard™ Assured</a></li>
+          <li><a href="./#tech-section" id="fl-qascon">QASCON-450+ Checklist</a></li>
+          <li><a href="#testimonials-section" id="fl-reviews">NRI Client Stories</a></li>
+          <li><a href="#process-section" id="fl-process">Handover Process</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 4 -->
+      <div class="footer-newsletter">
+        <h4 class="footer-col-title">Corporate Office</h4>
+        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.8rem;">
+          <i class="fa-solid fa-location-dot" style="color: var(--accent-red); margin-right: 8px;"></i>
+          426/1, 12th Cross, Jakkur Layout,<br>Byatarayanapura, Bengaluru - 560064
+        </p>
+        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+          <i class="fa-solid fa-envelope" style="color: var(--accent-red); margin-right: 8px;"></i>
+          consult@redcarpetventures.in
+        </p>
+        <p class="footer-col-title" style="margin-bottom: 0.5rem; font-size: 0.95rem;">Join Executive List</p>
+        <form class="newsletter-form" id="footer-newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Enter business email..." required
+            id="newsletter-email">
+          <button type="submit" class="newsletter-btn" id="newsletter-submit">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Red Carpet Ventures. All rights reserved. RERA Karnataka Registration under act
+        guidelines. Real Estate consulting partners are certified engineers and legal evaluators.</p>
+      <div class="footer-bottom-links">
+        <a href="#" id="fl-privacy">Privacy Policy</a>
+        <a href="#" id="fl-terms">Terms of Service</a>
+        <a href="#" id="fl-disclaimer">Legal Disclaimer</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- --- LEAD CONVERSION MODAL WINDOW --- -->
+  <div class="modal" id="lead-wizard-modal">
+    <div class="glass-panel-gold modal-content">
+      <button class="modal-close" id="btn-close-modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Indicator -->
+      <div class="wizard-steps-indicator">
+        <div class="indicator-step active" data-step="1">1</div>
+        <div class="indicator-step" data-step="2">2</div>
+        <div class="indicator-step" data-step="3">3</div>
+        <div class="indicator-step" data-step="4">4</div>
+      </div>
+
+      <!-- Step 1: Solution Interest -->
+      <div class="wizard-panel active" data-step="1" id="wizard-step-1">
+        <h3 class="lead-form-title" style="margin-bottom: 0.5rem;">What is your investment goal?</h3>
+        <p class="lead-form-subtitle">Choose the RCV solution that perfectly matches your current requirement.</p>
+
+        <div class="wizard-option-card selected" data-value="properties" id="opt-properties">
+          <div class="wizard-option-icon"><i class="fa-solid fa-hotel"></i></div>
+          <span class="wizard-option-title">Buy Luxury Property (Apartment/Villa/Plot)</span>
+        </div>
+        <div class="wizard-option-card" data-value="build" id="opt-build">
+          <div class="wizard-option-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+          <span class="wizard-option-title">Custom Independent Villa Construction</span>
+        </div>
+        <div class="wizard-option-card" data-value="interiors" id="opt-interiors">
+          <div class="wizard-option-icon"><i class="fa-solid fa-couch"></i></div>
+          <span class="wizard-option-title">Bespoke Architectural Interior Designs</span>
+        </div>
+
+        <div class="wizard-navigation">
+          <button class="btn-premium btn-gold btn-next-step" id="wz-next-1">
+            Next: Select Locality
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2: Locality Hub -->
+      <div class="wizard-panel" data-step="2" id="wizard-step-2">
+        <h3 class="lead-form-title" style="margin-bottom: 0.5rem;">Select Preferred Locality</h3>
+        <p class="lead-form-subtitle">Our real estate experts focus on high-appreciation Bangalore corridors.</p>
+
+        <div class="wizard-option-card selected" data-value="Devanahalli" id="opt-devanahalli">
+          <div class="wizard-option-icon"><i class="fa-solid fa-plane-departure"></i></div>
+          <div>
+            <span class="wizard-option-title">Devanahalli (Airport Corridor)</span>
+            <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 2px;">Villas & Plots - Best
+              appreciation potential</p>
+          </div>
+        </div>
+        <div class="wizard-option-card" data-value="Sarjapur" id="opt-sarjapur">
+          <div class="wizard-option-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <div>
+            <span class="wizard-option-title">Sarjapur Road & Whitefield</span>
+            <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 2px;">Premium Apartments - IT
+              commute focus</p>
+          </div>
+        </div>
+        <div class="wizard-option-card" data-value="North-Bangalore" id="opt-north">
+          <div class="wizard-option-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+          <div>
+            <span class="wizard-option-title">Hebbal, Jakkur & Hennur</span>
+            <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 2px;">Luxury Communities - Low
+              density residential</p>
+          </div>
+        </div>
+
+        <div class="wizard-navigation">
+          <button class="btn-premium btn-outline btn-prev-step" id="wz-prev-2">Back</button>
+          <button class="btn-premium btn-gold btn-next-step" id="wz-next-2">
+            Next: Specify Budget
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 3: Investment/Budget Bracket -->
+      <div class="wizard-panel" data-step="3" id="wizard-step-3">
+        <h3 class="lead-form-title" style="margin-bottom: 0.5rem;">Estimated Investment Budget</h3>
+        <p class="lead-form-subtitle">Allows our advisors to pre-screen eligible properties & custom quotes.</p>
+
+        <div class="wizard-option-card selected" data-value="tier-1" id="opt-budget-1">
+          <div class="wizard-option-icon"><i class="fa-solid fa-coins"></i></div>
+          <span class="wizard-option-title">₹80 Lakh - ₹1.5 Crore</span>
+        </div>
+        <div class="wizard-option-card" data-value="tier-2" id="opt-budget-2">
+          <div class="wizard-option-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+          <span class="wizard-option-title">₹1.5 Crore - ₹3 Crore</span>
+        </div>
+        <div class="wizard-option-card" data-value="tier-3" id="opt-budget-3">
+          <div class="wizard-option-icon"><i class="fa-solid fa-gem"></i></div>
+          <span class="wizard-option-title">₹3 Crore - ₹5 Crore+ (Ultra Luxury)</span>
+        </div>
+
+        <div class="wizard-navigation">
+          <button class="btn-premium btn-outline btn-prev-step" id="wz-prev-3">Back</button>
+          <button class="btn-premium btn-gold btn-next-step" id="wz-next-3">
+            Next: Contact Details
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 4: User Profile Details -->
+      <div class="wizard-panel" data-step="4" id="wizard-step-4">
+        <h3 class="lead-form-title" style="margin-bottom: 0.5rem;">Almost Completed</h3>
+        <p class="lead-form-subtitle">Provide your direct details to initiate your premium RCV TitleGuard file.</p>
+
+        <form id="wizard-final-form" novalidate>
+          <div class="form-group">
+            <input type="text" class="form-input" id="wz-name" placeholder=" " required>
+            <label class="form-label" for="wz-name">Your Full Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-input" id="wz-email" placeholder=" " required>
+            <label class="form-label" for="wz-email">Your Work Email</label>
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-input" id="wz-phone" placeholder=" " required>
+            <label class="form-label" for="wz-phone">Your Mobile (WhatsApp enabled)</label>
+          </div>
+
+          <div class="wizard-navigation">
+            <button type="button" class="btn-premium btn-outline btn-prev-step" id="wz-prev-4">Back</button>
+            <button type="submit" class="btn-premium btn-gold" id="wz-submit-btn">
+              Submit & Assign Advisor
+              <i class="fa-solid fa-arrow-right btn-arrow"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Step 5: Success Screen -->
+      <div class="wizard-panel" data-step="5" id="wizard-success-panel">
+        <div class="success-screen" style="text-align: center; padding: 20px 10px;">
+          <div class="success-icon-container"
+            style="width: 60px; height: 60px; border-radius: 50%; background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; font-size: 1.6rem; border: 1px solid rgba(16, 185, 129, 0.2);">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <h2 class="lead-form-title" style="font-size: 1.8rem; margin-bottom: 1rem;">Registration Successful!</h2>
+          <p class="lead-form-subtitle"
+            style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem; max-width: 440px; margin-left: auto; margin-right: auto; color: var(--text-secondary);">
+            Thank you. Your real estate advisory request has been successfully registered. A senior real estate engineer
+            and property portfolio advisor has been assigned to your profile.<br><br>
+            We will contact you via Phone/WhatsApp within <strong>30 minutes</strong> to review verified listings,
+            provide developer legal audits, or arrange premium site viewings.
+          </p>
+          <button class="btn-premium btn-outline btn-close-success" style="width: 100%; border-radius: 8px;"
+            id="wz-close-btn">
+            Explore Properties Catalog
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Classic Scripts for Offline local file:// Protocol Compatibility (CORS-free) -->
+  <script src="./src/data/properties.js"></script>
+  <script src="./src/data/localities.js"></script>
+  <script src="./src/realestate.js"></script>
+
+</body>
+
+</html>

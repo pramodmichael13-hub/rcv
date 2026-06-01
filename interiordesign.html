@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Bespoke Luxury Interior Design & Execution Bangalore | RedCarpet Ventures</title>
+  <meta name="description"
+    content="Experience world-class luxury interior design and turnkey execution in Bangalore. Re-imagine your space in photorealistic 3D VR. Engineered with termite-proof BWR marine ply, pure CP teak, German hardware, and written 10-year warranties.">
+  <meta name="keywords"
+    content="Luxury Interior Designers Bangalore, Turnkey Interior Execution, Modular Kitchens Bangalore, Living Room Interiors Bangalore, Smart Home Automation, Premium Woodwork, BWR Marine Plywood, RedCarpet Interiors">
+  <meta name="author" content="Red Carpet Ventures">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Premium Stylesheets -->
+  <link rel="stylesheet" href="./src/styles/index.css">
+
+  <!-- Custom Styles for Interior Cards Images -->
+  <style>
+    .service-img-box {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      border-radius: 16px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(212, 163, 115, 0.15);
+      position: relative;
+    }
+
+    .service-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .font-card:hover .service-img {
+      transform: scale(1.06);
+    }
+
+    #process-section {
+      padding-top: 4.5% !important;
+    }
+
+    /* Refined Tech Visual Hub proportions ONLY for interiors page */
+    #tech-visual-display.tech-visual-hub {
+      height: 420px;
+      /* Reduced from 520px for a more balanced and compact height */
+      background: var(--bg-secondary);
+    }
+
+    #tech-visual-display .tech-screen-img {
+      object-fit: cover;
+      /* Prevents vertical stretching and maintains aspect ratio */
+      object-position: top center;
+      /* Centers the dashboard content horizontally and anchors to top */
+    }
+
+    #tech-visual-display .tech-overlay-card {
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      padding: 16px 20px;
+      /* Slightly more compact overlay card to balance the reduced height */
+    }
+
+    /* Responsive Grid and Card Overrides ONLY for interior design page */
+    @media (max-width: 992px) {
+      .services-grid,
+      .process-grid,
+      .trust-cards-grid,
+      .properties-grid,
+      .testimonial-carousel {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 24px !important;
+      }
+      .cta-banner {
+        grid-template-columns: 1fr !important;
+        padding: 40px !important;
+        gap: 30px !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section-container {
+        padding: 60px 5% !important;
+      }
+      .section-header {
+        margin-bottom: 2.5rem !important;
+      }
+      .services-grid,
+      .process-grid,
+      .trust-cards-grid,
+      .properties-grid,
+      .testimonial-carousel {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+      }
+      .cta-banner {
+        grid-template-columns: 1fr !important;
+        padding: 30px 20px !important;
+        gap: 30px !important;
+      }
+      /* Compact visual dashboard display on mobile */
+      #tech-visual-display.tech-visual-hub {
+        height: 320px !important;
+      }
+      #tech-visual-display .tech-overlay-card {
+        bottom: 10px !important;
+        left: 10px !important;
+        right: 10px !important;
+        padding: 12px 15px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Ambient Glows -->
+  <div class="ambient-glow glow-top-right"
+    style="background: radial-gradient(circle, rgba(212, 163, 115, 0.05) 0%, rgba(255, 255, 255, 0) 70%);"></div>
+  <div class="ambient-glow glow-mid-left"
+    style="background: radial-gradient(circle, rgba(2, 132, 199, 0.015) 0%, rgba(255, 255, 255, 0) 70%);"></div>
+  <div class="ambient-glow glow-bottom-right"
+    style="background: radial-gradient(circle, rgba(212, 163, 115, 0.04) 0%, rgba(255, 255, 255, 0) 70%);"></div>
+
+  <!-- --- HEADER & NAVIGATION --- -->
+  <header id="main-header">
+    <a href="./" class="logo" id="logo-link">
+      <img src="./assets/images/logo.png" alt="Red Carpet Ventures"
+        style="height: 50px; width: auto; object-fit: contain; margin-right: 8px;">
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./realestate">Elite Properties</a></li>
+        <li><a href="./construction">RCV Build</a></li>
+        <li class="active" data-view="interiors"><a href="#hero-section">Luxury Interiors</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" onclick="return false;">RCV Intelligence <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px; transition: transform 0.3s ease;"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="./localityhub"><i class="fa-solid fa-map-location-dot" style="font-size: 0.8rem; color: var(--accent-red);"></i> Locality Hub</a></li>
+            <li><a href="./trustcenter"><i class="fa-solid fa-shield-halved" style="font-size: 0.8rem; color: var(--accent-emerald);"></i> Trust Center</a></li>
+          </ul>
+        </li>
+        <li><a href="./contactus">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <div class="nav-cta">
+      <a href="tel:+919611976003" class="nav-phone" id="header-phone-link">
+        <i class="fa-solid fa-phone-volume"></i>
+        <span>+91 96119 76003</span>
+      </a>
+      <button class="btn-premium btn-gold btn-open-modal" id="header-consult-btn">
+        Consult Advisor
+        <i class="fa-solid fa-arrow-right btn-arrow"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- --- MAIN CONTENT CONTAINER --- -->
+  <main>
+
+
+    <!-- --- 2. INTERIOR SOLUTIONS SECTION --- -->
+    <section class="section-container" id="services-section">
+      <div class="section-header">
+        <span class="section-tag"
+          style="border-color: #d4a373; color: #d4a373; background: rgba(212, 163, 115, 0.03);">Spatial concepts</span>
+        <h2 class="section-title">Turnkey Architectural Interior Design</h2>
+        <p class="section-desc">We deliver premium bespoke spatial designs, handling everything from architectural
+          layout modifications and smart home wiring to hand-polished woodwork.</p>
+      </div>
+
+      <div class="services-grid" style="grid-template-columns: repeat(3, 1fr); gap: 24px;">
+        <!-- Card 1 -->
+        <div class="glass-panel font-card"
+          style="padding: 30px; display: flex; flex-direction: column; gap: 15px; transition: var(--transition-smooth); border-radius:24px;">
+          <div class="service-img-box">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop&q=80"
+              alt="Bespoke Living Room" class="service-img">
+          </div>
+          <div class="service-icon-box"
+            style="margin-bottom:0; margin-top: 5px; background: rgba(212, 163, 115, 0.04); border-color: rgba(212, 163, 115, 0.25); color: #d4a373;">
+            <i class="fa-solid fa-couch"></i>
+          </div>
+          <h3
+            style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: var(--text-primary);">
+            Bespoke Living Rooms</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0;">Warm
+            hospitality-inspired lounges. Curated Italian Statuario marble TV backdrops, hand-finished fluted wooden
+            panels, and hidden ambient lighting arrays.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-panel font-card"
+          style="padding: 30px; display: flex; flex-direction: column; gap: 15px; transition: var(--transition-smooth); border-radius:24px;">
+          <div class="service-img-box">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop&q=80"
+              alt="Elite Modular Kitchen" class="service-img">
+          </div>
+          <div class="service-icon-box"
+            style="margin-bottom:0; margin-top: 5px; background: rgba(212, 163, 115, 0.04); border-color: rgba(212, 163, 115, 0.25); color: #d4a373;">
+            <i class="fa-solid fa-kitchen-set"></i>
+          </div>
+          <h3
+            style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: var(--text-primary);">
+            Elite Modular Kitchens</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0;">
+            German-engineered modular layouts. Anti-fingerprint acrylic finishes, seamless soft-close drawers
+            (Blum/Hettich), integrated sensors, and quartz counter tops.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-panel font-card"
+          style="padding: 30px; display: flex; flex-direction: column; gap: 15px; transition: var(--transition-smooth); border-radius:24px;">
+          <div class="service-img-box">
+            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&auto=format&fit=crop&q=80"
+              alt="Luxury Bedroom Suite" class="service-img">
+          </div>
+          <div class="service-icon-box"
+            style="margin-bottom:0; margin-top: 5px; background: rgba(212, 163, 115, 0.04); border-color: rgba(212, 163, 115, 0.25); color: #d4a373;">
+            <i class="fa-solid fa-bed"></i>
+          </div>
+          <h3
+            style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: var(--text-primary);">
+            Luxury Bedroom Suites</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0;">Hotel-suite
+            styled master retreats. Velvet fabric wall bed panels, walk-in closets with tinted glass sliding profiles,
+            and warm sensory task lighting.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="glass-panel font-card"
+          style="padding: 30px; display: flex; flex-direction: column; gap: 15px; transition: var(--transition-smooth); border-radius:24px;">
+          <div class="service-img-box">
+            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=800&auto=format&fit=crop&q=80"
+              alt="Smart Living Automation" class="service-img">
+          </div>
+          <div class="service-icon-box"
+            style="margin-bottom:0; margin-top: 5px; background: rgba(212, 163, 115, 0.04); border-color: rgba(212, 163, 115, 0.25); color: #d4a373;">
+            <i class="fa-solid fa-house-laptop"></i>
+          </div>
+          <h3
+            style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: var(--text-primary);">
+            Smart Living Automations</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0;">Complete smart
+            home integration. Custom ceiling speakers (Sonos), automated scene-select dimming, motorized curtain tracks,
+            and smart climate controls.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="glass-panel font-card"
+          style="padding: 30px; display: flex; flex-direction: column; gap: 15px; transition: var(--transition-smooth); border-radius:24px;">
+          <div class="service-img-box">
+            <img src="https://images.unsplash.com/photo-1617806118233-18e1db207f62?w=800&auto=format&fit=crop&q=80"
+              alt="Dining & Lounge" class="service-img">
+          </div>
+          <div class="service-icon-box"
+            style="margin-bottom:0; margin-top: 5px; background: rgba(212, 163, 115, 0.04); border-color: rgba(212, 163, 115, 0.25); color: #d4a373;">
+            <i class="fa-solid fa-wine-glass"></i>
+          </div>
+          <h3
+            style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: var(--text-primary);">
+            Dining & Lounges</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0;">Elegant
+            hosting enclaves. Custom CP teak dining tables, double-height visual lighting grids, and built-in luxury bar
+            counters with acoustic insulation.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="glass-panel font-card"
+          style="padding: 30px; display: flex; flex-direction: column; gap: 15px; transition: var(--transition-smooth); border-radius:24px;">
+          <div class="service-img-box">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&auto=format&fit=crop&q=80"
+              alt="Bespoke Woodwork" class="service-img">
+          </div>
+          <div class="service-icon-box"
+            style="margin-bottom:0; margin-top: 5px; background: rgba(212, 163, 115, 0.04); border-color: rgba(212, 163, 115, 0.25); color: #d4a373;">
+            <i class="fa-solid fa-tree"></i>
+          </div>
+          <h3
+            style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: var(--text-primary);">
+            Bespoke Woodwork</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0;">Architectural
+            details crafted in pure teak, solid CP timber, and low-VOC asian paints royale. Complete custom execution
+            tailored to fit room proportions perfectly.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 3. WHY CHOOSE RCV INTERIORS (TRUST PILLARS) --- -->
+    <section class="section-container" id="why-rcv-section" style="background-color: var(--bg-secondary);">
+      <div class="section-header">
+        <span class="section-tag"
+          style="border-color: #d4a373; color: #d4a373; background: rgba(212, 163, 115, 0.03);">Quality Shield</span>
+        <h2 class="section-title">The RCV Material Assurance Standard</h2>
+        <p class="section-desc">Unlike typical modular startups using cheap MDF or particle board that bends under
+          moisture, RCV enforces gold-standard timber engineering.</p>
+      </div>
+
+      <div class="trust-cards-grid">
+        <!-- Pillar 1 -->
+        <div class="trust-card" id="trust-card-int-1">
+          <div class="trust-card-icon"
+            style="background: rgba(212, 163, 115, 0.04); border-color: rgba(212, 163, 115, 0.2); color: #d4a373;">
+            <i class="fa-solid fa-tree"></i>
+          </div>
+          <h3 class="trust-card-title">100% BWR Marine Plywood</h3>
+          <p class="trust-card-desc">Zero MDF, zero particle board. All modular structures utilize termite-resistant,
+            boiling-water-proof BWR Marine Ply, co-engineered for permanent spatial stability.</p>
+          <span class="logo-badge" style="border-color: rgba(212, 163, 115, 0.2); color: #d4a373;">Termite-Proof /
+            Water-Proof</span>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="trust-card" id="trust-card-int-2">
+          <div class="trust-card-icon"
+            style="background: rgba(212, 163, 115, 0.04); border-color: rgba(212, 163, 115, 0.2); color: #d4a373;">
+            <i class="fa-solid fa-glasses"></i>
+          </div>
+          <h3 class="trust-card-title">Photorealistic 3D VR Previews</h3>
+          <p class="trust-card-desc">Zero visualization surprise. Walk through your fully mapped luxury villa or
+            high-rise penthouse in photorealistic 3D VR before starting modular production.</p>
+          <span class="logo-badge" style="border-color: rgba(2, 132, 199, 0.2); color: var(--accent-blue);">Immersive 3D
+            Experience</span>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="trust-card" id="trust-card-int-3">
+          <div class="trust-card-icon"
+            style="background: rgba(212, 163, 115, 0.04); border-color: rgba(212, 163, 115, 0.2); color: #d4a373;">
+            <i class="fa-solid fa-industry"></i>
+          </div>
+          <h3 class="trust-card-title">German Turnkey Production</h3>
+          <p class="trust-card-desc">High-precision execution. All custom panels are cut, laminated, and pre-drilled in
+            our German CNC production facility, securing dust-free site assembly.</p>
+          <span class="logo-badge" style="border-color: rgba(16, 185, 129, 0.2); color: var(--accent-emerald);">German
+            CNC Precision</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 4. INTERIOR DESIGN PROCESS --- -->
+    <section class="section-container glass-panel" id="process-section"
+      style="margin-top: 6%; margin-left: 6%; margin-right: 6%; border-radius: 30px;">
+      <div class="section-header" style="text-align: center; margin: 0 auto 5rem auto;">
+        <span class="section-tag"
+          style="border-color: #d4a373; color: #d4a373; background: rgba(212, 163, 115, 0.03);">Concierge Journey</span>
+        <h2 class="section-title">Your Path to Bespoke Possession</h2>
+        <p class="section-desc" style="margin: 0 auto; max-width: 600px;">How we protect your capital and ensure total
+          quality from the very first consultation call up to the handover.</p>
+      </div>
+
+      <div class="process-grid" style="grid-template-columns: repeat(3, 1fr); gap: 24px;">
+        <!-- Step 1 -->
+        <div class="glass-panel process-card" id="proc-card-1" style="width: 100%;">
+          <div class="process-icon-box" style="color:#d4a373; background:rgba(212, 163, 115, 0.04);">
+            <i class="fa-regular fa-comments"></i>
+          </div>
+          <h3 class="process-card-title">1. Spatial Discovery</h3>
+          <p class="process-card-desc">Meet your lead spatial architect to review your lifestyle preferences, room
+            dimensions, Vastu layouts, and design references.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glass-panel process-card" id="proc-card-2" style="width: 100%;">
+          <div class="process-icon-box" style="color:#d4a373; background:rgba(212, 163, 115, 0.04);">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <h3 class="process-card-title">2. Material Moodboarding</h3>
+          <p class="process-card-desc">Review tangible swatches: hand-picked marbles, walnut veneers, anti-fingerprint
+            laminates, custom fabrics, and smart lighting layouts.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glass-panel process-card" id="proc-card-3" style="width: 100%;">
+          <div class="process-icon-box" style="color:#d4a373; background:rgba(212, 163, 115, 0.04);">
+            <i class="fa-solid fa-glasses"></i>
+          </div>
+          <h3 class="process-card-title">3. 3D Render & VR walk</h3>
+          <p class="process-card-desc">Explore photorealistic 3D VR renders. Refine lighting angles, texture scales, and
+            spatial clearances before locking production blueprints.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="glass-panel process-card" id="proc-card-4" style="width: 100%;">
+          <div class="process-icon-box" style="color:#d4a373; background:rgba(212, 163, 115, 0.04);">
+            <i class="fa-solid fa-industry"></i>
+          </div>
+          <h3 class="process-card-title">4. German CNC Production</h3>
+          <p class="process-card-desc">Blueprints are fed into our modular factory. CNC routers cut BWR plywood and
+            hot-press laminates with zero millimeter tolerance margins.</p>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="glass-panel process-card" id="proc-card-5" style="width: 100%;">
+          <div class="process-icon-box" style="color:#d4a373; background:rgba(212, 163, 115, 0.04);">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <h3 class="process-card-title">5. Turnkey Site Installation</h3>
+          <p class="process-card-desc">RCV craftsmen assemble panels dust-free, wire smart conduits, install European
+            fitments, and apply custom low-VOC finishes.</p>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="glass-panel process-card" id="proc-card-6" style="width: 100%;">
+          <div class="process-icon-box" style="color:#d4a373; background:rgba(212, 163, 115, 0.04);">
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <h3 class="process-card-title">6. Certified Handover</h3>
+          <p class="process-card-desc">Conduct complete safety checks, deep modular cleaning, final accessory placement,
+            and deliver written 10-year woodwork warranties.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 5. PREMIUM MATERIAL & FINISH STANDARDS --- -->
+    <section class="section-container" id="standards-section">
+      <div class="section-header">
+        <span class="section-tag"
+          style="border-color: var(--accent-emerald); color: var(--accent-emerald); background: rgba(16, 185, 129, 0.04);">Elite
+          Selections</span>
+        <h2 class="section-title">World-Class Finish Standards</h2>
+        <p class="section-desc">We procure direct structural finishes and custom modular components from premium global
+          channels. Zero substitutions, zero quality shortcuts.</p>
+      </div>
+
+      <div class="trust-cards-grid" style="grid-template-columns: repeat(4, 1fr);">
+        <!-- Stand 1 -->
+        <div class="trust-card" style="padding: 30px;">
+          <div class="trust-card-icon"
+            style="background: rgba(16, 185, 129, 0.05); color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.15);">
+            <i class="fa-solid fa-tree"></i>
+          </div>
+          <h3 class="trust-card-title" style="font-size: 1.25rem;">Marine Ply Woodwork</h3>
+          <p class="trust-card-desc" style="font-size: 0.85rem; margin-bottom: 0;">100% BWR Marine Plywood structure
+            reinforced with solid CP teak trimmings. Written 10-year warp-proof and termite-proof warranty certificate.
+          </p>
+        </div>
+
+        <!-- Stand 2 -->
+        <div class="trust-card" style="padding: 30px;">
+          <div class="trust-card-icon"
+            style="background: rgba(16, 185, 129, 0.05); color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.15);">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <h3 class="trust-card-title" style="font-size: 1.25rem;">Italian Statuario Marble</h3>
+          <p class="trust-card-desc" style="font-size: 0.85rem; margin-bottom: 0;">Hand-picked white Italian marble with
+            continuous veining for double-height wall cladding, custom credenzas, and vanity finishes.</p>
+        </div>
+
+        <!-- Stand 3 -->
+        <div class="trust-card" style="padding: 30px;">
+          <div class="trust-card-icon"
+            style="background: rgba(16, 185, 129, 0.05); color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.15);">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h3 class="trust-card-title" style="font-size: 1.25rem;">Anti-Fingerprint Matte</h3>
+          <p class="trust-card-desc" style="font-size: 0.85rem; margin-bottom: 0;">Ultra-premium European
+            anti-fingerprint matte laminates, scratch-resistant acrylic glass finishes, and brushed gold aluminum
+            profiles.</p>
+        </div>
+
+        <!-- Stand 4 -->
+        <div class="trust-card" style="padding: 30px;">
+          <div class="trust-card-icon"
+            style="background: rgba(16, 185, 129, 0.05); color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.15);">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <h3 class="trust-card-title" style="font-size: 1.25rem;">German Fitments</h3>
+          <p class="trust-card-desc" style="font-size: 0.85rem; margin-bottom: 0;">German soft-close drawers and hinges
+            from Blum or Hettich, hidden pull-out systems, and Kohler sensory modular sinks.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 6. SMART LIVING & TECHNOLOGY --- -->
+    <section class="section-container" id="tech-section" style="background-color: var(--bg-secondary);">
+      <div class="tech-container">
+        <!-- Left: Technology Value Props -->
+        <div class="tech-checklist">
+          <span class="section-tag"
+            style="border-color: #d4a373; color: #d4a373; background: rgba(212, 163, 115, 0.03);">Future Living</span>
+          <h2 class="section-title" style="font-size: 2.8rem;">Seamless Smart Home Integrations
+          </h2>
+          <p class="section-desc" style="margin-bottom: 1rem; margin-top: -2rem;">We design homes that are alive. Move
+            beyond simple smart
+            bulbs—RCV builds centralized automation arrays calculated for modern luxury lifestyles.</p>
+
+          <!-- Check 1 -->
+          <div class="tech-item" id="tech-item-1">
+            <div class="tech-bullet" style="background: #d4a373; color:#fff; border:none;">1</div>
+            <div>
+              <h3 class="tech-item-title">Custom Mood Lighting Scenarios</h3>
+              <p class="tech-item-desc">Program ambient ceiling coves, sensory wall wash downlights, and reading tracks.
+                Toggle scenes (Morning, Cinema, Hosting) with one tap.</p>
+            </div>
+          </div>
+
+          <!-- Check 2 -->
+          <div class="tech-item" id="tech-item-2">
+            <div class="tech-bullet" style="background: #d4a373; color:#fff; border:none;">2</div>
+            <div>
+              <h3 class="tech-item-title">Invisible Spatial Sound Systems</h3>
+              <p class="tech-item-desc">Centralized audio conduits feeding high-fidelity invisible ceiling speakers
+                (Sonos/Bose) tuned for optimal room acoustics.</p>
+            </div>
+          </div>
+
+          <!-- Check 3 -->
+          <div class="tech-item" id="tech-item-3">
+            <div class="tech-bullet" style="background: #d4a373; color:#fff; border:none;">3</div>
+            <div>
+              <h3 class="tech-item-title">Motorized Drapery Controls</h3>
+              <p class="tech-item-desc">Smart motorized curtain tracks hidden inside custom fluted wooden pelmets,
+                opening and closing automatically matching ambient solar cycles.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Mobile Dashboard Preview -->
+        <div class="tech-visual-hub" id="tech-visual-display">
+          <img src="./assets/images/dasboard.jpg" alt="RCV Construction Dashboard" class="tech-screen-img">
+          <div class="glass-panel-gold tech-overlay-card" style="border-color: rgba(212, 163, 115, 0.25);">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80"
+              alt="RCV Civil Engineer" class="tech-avatar">
+            <div>
+              <h4 style="font-size: 1rem; font-weight:600; margin-bottom: 2px;">Venkata R., RCV Interior PM</h4>
+              <p style="font-size: 0.8rem; color: var(--text-secondary);">Uploaded: Indiranagar Penthouse customized
+                modular kitchen final Blum hinge installation checks.</p>
+            </div>
+            <div class="tech-status-dot" style="background-color: var(--accent-emerald);"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 7. FEATURED INTERIOR PROJECTS --- -->
+    <section class="section-container" id="projects-section">
+      <div class="section-header">
+        <span class="section-tag">Design Portfolio</span>
+        <h2 class="section-title">Landmark Luxury Interiors</h2>
+        <p class="section-desc">Explore completed bespoke spatial interior concepts delivered across Bangalore's elite
+          enclaves.</p>
+      </div>
+
+      <div class="properties-grid" id="interior-projects-grid">
+        <!-- Project 1 -->
+        <div class="glass-panel prop-card">
+          <div class="prop-img-box">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&auto=format&fit=crop&q=80"
+              alt="Contemporary Living Room" class="prop-img">
+            <span class="prop-status-tag" style="background:#d4a373;">Completed</span>
+            <span class="prop-apprec-tag">Materials: BWR Ply Teak</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-meta-row">
+              <span class="prop-locality">
+                <i class="fa-solid fa-location-dot" style="color: var(--accent-red)"></i>
+                Indiranagar, Bangalore
+              </span>
+              <span class="logo-badge"
+                style="border-color: rgba(255,255,255,0.05); color: var(--text-muted);">Contemporary Minimalist</span>
+            </div>
+            <h3 class="prop-title">The Indiranagar Penthouse</h3>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-house-laptop"></i>
+                <span>Living Room & Kitchen</span>
+              </div>
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-maximize"></i>
+                <span>3,200 Sq.Ft Interior</span>
+              </div>
+            </div>
+            <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(17,24,39,0.06);">
+              <span style="font-size:0.75rem; color: var(--text-secondary); font-weight:600;">Spatial Highlights:</span>
+              <p style="font-size:0.8rem; color: var(--text-secondary); margin-top:2px;">Hand-picked Statuario TV panel,
+                fluted teak partitions, built-in ambient dimming coves.</p>
+            </div>
+            <div class="prop-bottom" style="margin-top:20px;">
+              <div>
+                <span class="prop-price-label">Project Budget</span>
+                <p class="prop-price">₹45 Lakh</p>
+              </div>
+              <button class="btn-premium btn-outline-gold btn-open-modal" style="padding: 10px 18px; font-size: 0.8rem;"
+                data-prop-title="Indiranagar Penthouse Interior">
+                Inquire Space
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-panel prop-card">
+          <div class="prop-img-box">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80"
+              alt="Luxury Modular Kitchen" class="prop-img">
+            <span class="prop-status-tag" style="background:#d4a373;">Completed</span>
+            <span class="prop-apprec-tag">Modular Kitchen Spec</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-meta-row">
+              <span class="prop-locality">
+                <i class="fa-solid fa-location-dot" style="color: var(--accent-red)"></i>
+                Hebbal Lakeview Enclave
+              </span>
+              <span class="logo-badge" style="border-color: rgba(255,255,255,0.05); color: var(--text-muted);">German
+                CNC Precision</span>
+            </div>
+            <h3 class="prop-title">Hebbal Villa Modular Kitchen</h3>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-house-laptop"></i>
+                <span>modular kitchen & Pantry</span>
+              </div>
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-maximize"></i>
+                <span>650 Sq.Ft Space</span>
+              </div>
+            </div>
+            <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(17,24,39,0.06);">
+              <span style="font-size:0.75rem; color: var(--text-secondary); font-weight:600;">Spatial Highlights:</span>
+              <p style="font-size:0.8rem; color: var(--text-secondary); margin-top:2px;">Anti-fingerprint matte
+                laminates, Blum soft-close mechanisms, integrated sensory sink.</p>
+            </div>
+            <div class="prop-bottom" style="margin-top:20px;">
+              <div>
+                <span class="prop-price-label">Project Budget</span>
+                <p class="prop-price">₹18 Lakh</p>
+              </div>
+              <button class="btn-premium btn-outline-gold btn-open-modal" style="padding: 10px 18px; font-size: 0.8rem;"
+                data-prop-title="Hebbal Modular Kitchen Interior">
+                Inquire Space
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="glass-panel prop-card">
+          <div class="prop-img-box">
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&auto=format&fit=crop&q=80"
+              alt="Luxury Master Suite" class="prop-img">
+            <span class="prop-status-tag" style="background:#d4a373;">Ongoing</span>
+            <span class="prop-apprec-tag">Progress: 60%</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-meta-row">
+              <span class="prop-locality">
+                <i class="fa-solid fa-location-dot" style="color: var(--accent-red)"></i>
+                Jakkur Villa Gated Community
+              </span>
+              <span class="logo-badge" style="border-color: rgba(255,255,255,0.05); color: var(--text-muted);">Warm
+                Luxury Suite Spec</span>
+            </div>
+            <h3 class="prop-title">Jakkur Custom Villa Suites</h3>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-house-laptop"></i>
+                <span>3 Bed Suites & walk-in Closets</span>
+              </div>
+              <div class="prop-spec-item">
+                <i class="fa-solid fa-maximize"></i>
+                <span>2,400 Sq.Ft Area</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 10px; margin-bottom: 10px;">
+              <div
+                style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--text-secondary); margin-bottom: 3px;">
+                <span>woodwork & Framing</span>
+                <strong>60%</strong>
+              </div>
+              <div style="height: 6px; background: rgba(17,24,39,0.06); border-radius: 3px; overflow: hidden;">
+                <div
+                  style="height: 100%; width: 60%; background: linear-gradient(90deg, #d4a373, var(--accent-blue)); border-radius: 3px;">
+                </div>
+              </div>
+            </div>
+
+            <div class="prop-bottom" style="margin-top:15px;">
+              <div>
+                <span class="prop-price-label">Project Budget</span>
+                <p class="prop-price">₹32 Lakh</p>
+              </div>
+              <button class="btn-premium btn-outline-gold btn-open-modal" style="padding: 10px 18px; font-size: 0.8rem;"
+                data-prop-title="Jakkur Custom Villa Interiors">
+                Inquire Space
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 8. CLIENT TESTIMONIALS --- -->
+    <section class="section-container" id="testimonials-section" style="background-color: var(--bg-secondary);">
+      <div class="section-header" style="text-align: center; margin: 0 auto 5rem auto;">
+        <span class="section-tag">Bangalore Voices</span>
+        <h2 class="section-title">Endorsed by Top Executives</h2>
+        <p class="section-desc" style="margin: 0 auto; max-width: 600px;">Read about how we successfully managed real
+          estate acquisitions, quality villas, and luxury interiors for Bangalore's leading tech professionals and NRIs.
+        </p>
+      </div>
+
+      <div class="testimonial-carousel" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+        <!-- Testi 1 -->
+        <div class="glass-panel testi-card" style="width: 100%;">
+          <p class="testi-quote">"Their interior design department completed a flawless luxury spatial concept for our
+            Jakkur penthouse. Every panel of CP teak wood, Italian marble, and smart light integration is absolutely
+            stunning."</p>
+          <div class="testi-user">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80"
+              alt="Rajeev N." class="testi-avatar">
+            <div>
+              <h4 class="testi-name">Rajeev Nambiar</h4>
+              <p class="testi-role">VP Operations, Manyata Tech Park Corporate</p>
+              <div class="testi-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testi 2 -->
+        <div class="glass-panel testi-card" style="width: 100%;">
+          <p class="testi-quote">"As an NRI residing in San Francisco, I was extremely anxious about managing villa
+            interior execution. RCV solved it. Mapped in 3D VR renders first, produced in their German factory, and
+            assembled dust-free."</p>
+          <div class="testi-user">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80"
+              alt="Srinath K." class="testi-avatar">
+            <div>
+              <h4 class="testi-name">Srinath Raghavan</h4>
+              <p class="testi-role">Staff Engineer, Google (NRI)</p>
+              <div class="testi-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testi 3 -->
+        <div class="glass-panel testi-card" style="width: 100%;">
+          <p class="testi-quote">"Unlike traditional interior brokers who push low-quality modular cabinets, RCV's
+            material checklist was extremely transparent: termite-proof marine plywood structure and written 10-year
+            woodwork warranties."</p>
+          <div class="testi-user">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80"
+              alt="Neha Sharma" class="testi-avatar">
+            <div>
+              <h4 class="testi-name">Neha Sharma</h4>
+              <p class="testi-role">Co-Founder, Bangalore FinTech Startup</p>
+              <div class="testi-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 9. FAQ SECTION --- -->
+    <section class="section-container" id="faq-section">
+      <div class="section-header" style="text-align: center; margin: 0 auto 4rem auto;">
+        <span class="section-tag">Direct Answers</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc" style="margin: 0 auto; max-width: 600px;">Clear, honest, and expert explanations
+          regarding RCV's turnkey custom interior concepts and material checklists.</p>
+      </div>
+
+      <div class="faq-accordion">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">What is your modular woodwork material checklist?</span>
+            <div class="faq-icon-box">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-answer">
+              We enforce an absolute Zero-MDF / Zero-Particle Board policy. All custom modular frames, cabinets, and
+              carcass units are constructed in termite-resistant, boiling-water-proof BWR Marine Plywood. Main door
+              frames are built in CP teak wood, finished with premium laminates or veneers, and secured by Hettich or
+              Blum hinges.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">Do you charge design fees or take commission on purchases?</span>
+            <div class="faq-icon-box">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-answer">
+              Our design fees are mapped transparently into the final turnkey modular estimate, calculated at flat rate
+              values without hidden commissions. We provide client logins to review our direct wholesale procurement
+              channels for marbles, custom fabrics, and light fixtures, passing developer-discounts straight to you.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">Can I visit the CNC modular production factory?</span>
+            <div class="faq-icon-box">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-answer">
+              Yes. We arrange private site visits and factory checklists at our Bangalore German-CNC production plant
+              prior to delivery. You can physically inspect structural plywood core layers, hot-pressed laminate
+              adhesion, edge-banding tightness, and hardware alignment tests.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">How are smart home automated integrations handled?</span>
+            <div class="faq-icon-box">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-answer">
+              Unlike typical decorators who just fit smart plugs, RCV co-engineers internal conduits. Our structural MEP
+              engineers design integrated wire paths for central sound controllers (Sonos), motorized pelmet drapery
+              tracks, climate panels, and low-voltage Dimmer controls (KNX/Lutron) during framing structures.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 10. STRONG FINAL CTA SECTION --- -->
+    <section class="section-container final-cta" id="cta-section">
+      <div class="glass-panel cta-banner" id="cta-banner-box"
+        style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; text-align: left; align-items: center; padding: 50px 60px;">
+        <div>
+          <h2 class="cta-title" style="font-size: 2.2rem; line-height: 1.2; margin-bottom: 1.5rem;">Curate the Gold
+            Standard of Bangalore Interiors Today</h2>
+          <p class="cta-desc" style="margin-bottom: 2rem;">Skip generic modular alignments. Get in touch with a senior
+            spatial interior architect to review customized concept boards.</p>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <a href="tel:+919611976003" class="nav-phone" style="font-size: 1.1rem; color: var(--text-primary);">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span>+91 96119 76003 (Direct Hotline)</span>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=919611976003&text=Hi,%20I'm%20interested%20in%20an%20RCV%20luxury%20spatial%20interior%20design%20consultation."
+              target="_blank" class="nav-phone" style="font-size: 1.1rem; color: #25d366;">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Chat on WhatsApp (Instant Response)</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-panel-gold"
+          style="padding: 30px; background: rgba(255, 255, 255, 0.95); border: 1px solid rgba(212, 163, 115, 0.25);">
+          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 15px;">Book
+            Design Discovery Call</h3>
+          <form id="interiors-footer-form" novalidate>
+            <div class="form-group" style="margin-bottom: 15px;">
+              <input type="text" class="form-input" id="re-ft-name" placeholder=" " required
+                style="padding: 10px 12px; font-size: 0.9rem;">
+              <label class="form-label" for="re-ft-name" style="font-size: 0.85rem; left: 12px;">Your Name</label>
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+              <input type="email" class="form-input" id="re-ft-email" placeholder=" " required
+                style="padding: 10px 12px; font-size: 0.9rem;">
+              <label class="form-label" for="re-ft-email" style="font-size: 0.85rem; left: 12px;">Work Email</label>
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+              <input type="tel" class="form-input" id="re-ft-phone" placeholder=" " required
+                style="padding: 10px 12px; font-size: 0.9rem;">
+              <label class="form-label" for="re-ft-phone" style="font-size: 0.85rem; left: 12px;">Mobile Number</label>
+            </div>
+            <button type="submit" class="btn-premium btn-gold"
+              style="width: 100%; padding: 12px; border-radius: 8px; font-size: 0.9rem; background: linear-gradient(135deg, #d4a373 0%, #b8860b 100%); border:none;">
+              Confirm Strategy Booking
+              <i class="fa-solid fa-arrow-right btn-arrow"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- --- 11. FOOTER --- -->
+  <footer id="main-footer">
+    <div class="footer-grid">
+      <!-- Footer Col 1 -->
+      <div class="footer-brand">
+        <a href="./" class="logo">
+          <img src="./assets/images/logo.png" alt="Red Carpet Ventures"
+            style="height: 60px; width: auto; object-fit: contain; margin-right: 8px;">
+        </a>
+        <p class="footer-desc">A premium prop-tech and engineering advisory firm based in Bangalore. Providing
+          full-service verified real estate, structural villa construction, and architectural interior designs.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/share/cDKpJfRsH5kEJKht/?mibextid=qi2Omg" target="_blank" class="social-icon"
+            id="soc-fb"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/redcarpet-ventures/" target="_blank" class="social-icon"
+            id="soc-ln"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/red_carpet_ventures/" target="_blank" class="social-icon" id="soc-ig"><i
+              class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Footer Col 2 -->
+      <div>
+        <h4 class="footer-col-title">Our Solutions</h4>
+        <ul class="footer-links">
+          <li><a href="./realestate#properties-section" id="fl-properties">Luxury Apartments</a></li>
+          <li><a href="./realestate#properties-section" id="fl-villas">Custom Villas</a></li>
+          <li><a href="./realestate#properties-section" id="fl-plots">Gated Land Plots</a></li>
+          <li><a href="./construction#hero-section" id="fl-construction">Build Estimator</a></li>
+          <li><a href="#hero-section" id="fl-interiors">Home Interior Planning</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 3 -->
+      <div>
+        <h4 class="footer-col-title">Trust Center</h4>
+        <ul class="footer-links">
+          <li><a href="./#trust-section" id="fl-escrow">RCV SafeEscrow™</a></li>
+          <li><a href="./#trust-section" id="fl-title">TitleGuard™ Assured</a></li>
+          <li><a href="./construction#tech-section" id="fl-qascon">QASCON-450+ Checklist</a></li>
+          <li><a href="#testimonials-section" id="fl-reviews">NRI Client Stories</a></li>
+          <li><a href="#process-section" id="fl-process">Handover Process</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 4 -->
+      <div class="footer-newsletter">
+        <h4 class="footer-col-title">Corporate Office</h4>
+        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.8rem;">
+          <i class="fa-solid fa-location-dot" style="color: var(--accent-red); margin-right: 8px;"></i>
+          426/1, 12th Cross, Jakkur Layout,<br>Byatarayanapura, Bengaluru - 560064
+        </p>
+        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+          <i class="fa-solid fa-envelope" style="color: var(--accent-red); margin-right: 8px;"></i>
+          consult@redcarpetventures.in
+        </p>
+        <p class="footer-col-title" style="margin-bottom: 0.5rem; font-size: 0.95rem;">Join Executive List</p>
+        <form class="newsletter-form" id="footer-newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Enter business email..." required
+            id="newsletter-email">
+          <button type="submit" class="newsletter-btn" id="newsletter-submit">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Red Carpet Ventures. All rights reserved. RERA Karnataka Registration under act
+        guidelines. Real Estate consulting partners are certified engineers and legal evaluators.</p>
+      <div class="footer-bottom-links">
+        <a href="#" id="fl-privacy">Privacy Policy</a>
+        <a href="#" id="fl-terms">Terms of Service</a>
+        <a href="#" id="fl-disclaimer">Legal Disclaimer</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- --- LEAD CONVERSION MODAL WINDOW --- -->
+  <div class="modal" id="lead-wizard-modal">
+    <div class="glass-panel-gold modal-content">
+      <button class="modal-close" id="btn-close-modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Indicator -->
+      <div class="wizard-steps-indicator">
+        <div class="indicator-step active" data-step="1">1</div>
+        <div class="indicator-step" data-step="2">2</div>
+        <div class="indicator-step" data-step="3">3</div>
+        <div class="indicator-step" data-step="4">4</div>
+      </div>
+
+      <!-- Step 1: Solution Interest -->
+      <div class="wizard-panel active" data-step="1" id="wizard-step-1">
+        <h3 class="lead-form-title" style="margin-bottom: 0.5rem;">What is your investment goal?</h3>
+        <p class="lead-form-subtitle">Choose the RCV solution that perfectly matches your current requirement.</p>
+
+        <div class="wizard-option-card selected" data-value="properties" id="opt-properties">
+          <div class="wizard-option-icon"><i class="fa-solid fa-hotel"></i></div>
+          <span class="wizard-option-title">Buy Luxury Property (Apartment/Villa/Plot)</span>
+        </div>
+        <div class="wizard-option-card" data-value="build" id="opt-build">
+          <div class="wizard-option-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+          <span class="wizard-option-title">Custom Independent Villa Construction</span>
+        </div>
+        <div class="wizard-option-card" data-value="interiors" id="opt-interiors">
+          <div class="wizard-option-icon"><i class="fa-solid fa-couch"></i></div>
+          <span class="wizard-option-title">Bespoke Architectural Interior Designs</span>
+        </div>
+
+        <div class="wizard-navigation">
+          <button class="btn-premium btn-gold btn-next-step" id="wz-next-1">
+            Next: Select Locality
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2: Locality Hub -->
+      <div class="wizard-panel" data-step="2" id="wizard-step-2">
+        <h3 class="lead-form-title" style="margin-bottom: 0.5rem;">Select Preferred Locality</h3>
+        <p class="lead-form-subtitle">Our real estate experts focus on high-appreciation Bangalore corridors.</p>
+
+        <div class="wizard-option-card selected" data-value="Devanahalli" id="opt-devanahalli">
+          <div class="wizard-option-icon"><i class="fa-solid fa-plane-departure"></i></div>
+          <div>
+            <span class="wizard-option-title">Devanahalli (Airport Corridor)</span>
+            <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 2px;">Villas & Plots - Best
+              appreciation potential</p>
+          </div>
+        </div>
+        <div class="wizard-option-card" data-value="Sarjapur" id="opt-sarjapur">
+          <div class="wizard-option-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <div>
+            <span class="wizard-option-title">Sarjapur Road & Whitefield</span>
+            <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 2px;">Premium Apartments - IT
+              commute focus</p>
+          </div>
+        </div>
+        <div class="wizard-option-card" data-value="North-Bangalore" id="opt-north">
+          <div class="wizard-option-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+          <div>
+            <span class="wizard-option-title">Hebbal, Jakkur & Hennur</span>
+            <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 2px;">Luxury Communities - Low
+              density residential</p>
+          </div>
+        </div>
+
+        <div class="wizard-navigation">
+          <button class="btn-premium btn-outline btn-prev-step" id="wz-prev-2">Back</button>
+          <button class="btn-premium btn-gold btn-next-step" id="wz-next-2">
+            Next: Specify Budget
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 3: Investment/Budget Bracket -->
+      <div class="wizard-panel" data-step="3" id="wizard-step-3">
+        <h3 class="lead-form-title" style="margin-bottom: 0.5rem;">Estimated Investment Budget</h3>
+        <p class="lead-form-subtitle">Allows our advisors to pre-screen eligible properties & custom quotes.</p>
+
+        <div class="wizard-option-card selected" data-value="tier-1" id="opt-budget-1">
+          <div class="wizard-option-icon"><i class="fa-solid fa-coins"></i></div>
+          <span class="wizard-option-title">₹80 Lakh - ₹1.5 Crore</span>
+        </div>
+        <div class="wizard-option-card" data-value="tier-2" id="opt-budget-2">
+          <div class="wizard-option-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+          <span class="wizard-option-title">₹1.5 Crore - ₹3 Crore</span>
+        </div>
+        <div class="wizard-option-card" data-value="tier-3" id="opt-budget-3">
+          <div class="wizard-option-icon"><i class="fa-solid fa-gem"></i></div>
+          <span class="wizard-option-title">₹3 Crore - ₹5 Crore+ (Ultra Luxury)</span>
+        </div>
+
+        <div class="wizard-navigation">
+          <button class="btn-premium btn-outline btn-prev-step" id="wz-prev-3">Back</button>
+          <button class="btn-premium btn-gold btn-next-step" id="wz-next-3">
+            Next: Contact Details
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 4: User Profile Details -->
+      <div class="wizard-panel" data-step="4" id="wizard-step-4">
+        <h3 class="lead-form-title" style="margin-bottom: 0.5rem;">Almost Completed</h3>
+        <p class="lead-form-subtitle">Provide your direct details to initiate your premium RCV TitleGuard file.</p>
+
+        <form id="wizard-final-form" novalidate>
+          <div class="form-group">
+            <input type="text" class="form-input" id="wz-name" placeholder=" " required>
+            <label class="form-label" for="wz-name">Your Full Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-input" id="wz-email" placeholder=" " required>
+            <label class="form-label" for="wz-email">Your Work Email</label>
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-input" id="wz-phone" placeholder=" " required>
+            <label class="form-label" for="wz-phone">Your Mobile (WhatsApp enabled)</label>
+          </div>
+
+          <div class="wizard-navigation">
+            <button type="button" class="btn-premium btn-outline btn-prev-step" id="wz-prev-4">Back</button>
+            <button type="submit" class="btn-premium btn-gold" id="wz-submit-btn">
+              Submit & Assign Advisor
+              <i class="fa-solid fa-arrow-right btn-arrow"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Step 5: Success Screen -->
+      <div class="wizard-panel" data-step="5" id="wizard-success-panel">
+        <div class="success-screen" style="text-align: center; padding: 20px 10px;">
+          <div class="success-icon-container"
+            style="width: 60px; height: 60px; border-radius: 50%; background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; font-size: 1.6rem; border: 1px solid rgba(16, 185, 129, 0.2);">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <h2 class="lead-form-title" style="font-size: 1.8rem; margin-bottom: 1rem;">Registration Successful!</h2>
+          <p class="lead-form-subtitle"
+            style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem; max-width: 440px; margin-left: auto; margin-right: auto; color: var(--text-secondary);">
+            Thank you. Your luxury design consultation has been successfully registered. A senior spatial interior
+            architect has been assigned to your profile.<br><br>
+            We will contact you via Phone/WhatsApp within <strong>30 minutes</strong> to review custom modular layouts,
+            review custom material swatches, or arrange factory and design studio visits.
+          </p>
+          <button class="btn-premium btn-outline btn-close-success" style="width: 100%; border-radius: 8px;"
+            id="wz-close-btn">
+            Explore Curated Spaces
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Classic Scripts for Offline local file:// Protocol Compatibility (CORS-free) -->
+  <script src="./src/interiordesign.js"></script>
+
+</body>
+
+</html>
